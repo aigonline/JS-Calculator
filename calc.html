@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Calculator</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="main">
+    <header class="calc_header">
+      <input type="text" disabled id="display" class="calc_output" value="0" />
+    </header>
+    <footer class="calc_footer">
+      <div class="btn_group">
+        <button data-type="clear" type="reset" id="clear" class="btn btn-grey">C</button>
+        <button data-type="operator" value="invert" class="btn btn-grey">+/-</button>
+        <button data-type="operator" value="%" class="btn btn-grey">%</button>
+        <button data-type="operator" value="/" id="divide" class="btn btn-grey">÷</button>
+      </div>
+      <div class="btn_group">
+        <button data-type="operand" value="7" id="seven" class="btn btn-dark-grey">7</button>
+        <button data-type="operand" value="8" id="eight" class="btn btn-dark-grey">8</button>
+        <button data-type="operand" value="9" id="nine" class="btn btn-dark-grey">9</button>
+        <button data-type="operator" value="*" id="multiply" class="btn btn-orange">x</button>
+      </div>
+      <div class="btn_group">
+        <button data-type="operand" value="4" id="four" class="btn btn-dark-grey">4</button>
+        <button data-type="operand" value="5" id="five" class="btn btn-dark-grey">5</button>
+        <button data-type="operand" value="6" id="six" class="btn btn-dark-grey">6</button>
+        <button data-type="operator" value="-" id="subtract" class="btn btn-orange">-</button>
+      </div>
+      <div class="btn_group">
+        <button data-type="operand" value="1" id="one" class="btn btn-dark-grey">1</button>
+        <button data-type="operand" value="2" id="two" class="btn btn-dark-grey">2</button>
+        <button data-type="operand" value="3" id="three" class="btn btn-dark-grey">3</button>
+        <button data-type="operator" value="+" id="add" class="btn btn-orange">+</button>
+      </div>
+      <div class="btn_group">
+        <button data-type="operand" value="0" id="zero" class="btn btn-grow btn-dark-grey">0</button>
+        <button data-type="operator" value="." id="decimal" class="btn btn-dark-grey">.</button>
+        <button data-type="equals" value="=" id="equals" class="btn btn-orange"onclick="handleEquals()">=</button>
+      </div>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
